@@ -6,6 +6,22 @@ def check_sorted(array):
             return False
     return True
 
+
+
 if __name__ == '__main__':
     unsorted_array = [13,46,24,52,20,9]
     print(check_sorted(unsorted_array))
+
+# cook your dish here
+# def totalSteps(s):
+#     originalString = "ADVITIYA"
+#     totalSteps = 0
+#     for i in range(0, len(originalString)):
+#         if(- ord(s[i]) + ord(originalString[i]) > 0):
+#             totalSteps +=  - ord(s[i]) + ord(originalString[i])
+#         elif(- ord(s[i]) + ord(originalString[i]) < 0):
+#             totalSteps +=  26 + (- ord(s[i]) + ord(originalString[i]))
+#     return totalSteps
+    
+# if __name__ == "__main__":
+#     print(totalSteps('ADVITIAA'))
