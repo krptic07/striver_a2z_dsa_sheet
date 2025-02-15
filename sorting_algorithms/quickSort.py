@@ -5,7 +5,7 @@ def partition(array, low, high):
     while(i < j):
         while (array[i] <= pivot_element and i <= high -1):
             i += 1
-        while (array[j] >= pivot_element and j >= low -1):
+        while (array[j] >= pivot_element and j >= low + 1):
             j -= 1
         if (i < j):
             array[j], array[i] = array[i], array[j]
@@ -23,6 +23,6 @@ def quickSort(array, low, high):
 
 
 if __name__ == '__main__':
-    unsorted_array = [13,46,24,52,20,9]
+    unsorted_array = [2,0,2,1,1,0]
     quickSort(unsorted_array, 0, len(unsorted_array) - 1)
     print(unsorted_array)
